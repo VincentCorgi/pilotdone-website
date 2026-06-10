@@ -68,38 +68,47 @@
 </tr>
 <tr>
 <td>雲端同步</td>
-<td>❌ 僅本機</td>
-<td>✅ 跨裝置同步</td>
+<td>✅（配額內）</td>
+<td>✅ 無限</td>
 </tr>
 <tr>
-<td>共享清單</td>
+<td>清單／行事曆數量</td>
+<td>各上限 3</td>
+<td>無限</td>
+</tr>
+<tr>
+<td>共享清單 / 指派任務</td>
 <td>❌</td>
 <td>✅</td>
 </tr>
 <tr>
-<td>資料備份</td>
+<td>Google Calendar 同步</td>
 <td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>匯出資料（CSV／ICS）</td>
+<td>✅</td>
 <td>✅</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>v1.0 所有核心功能對所有用戶開放，付費差異僅在雲端同步。</p>
+<p>所有核心功能對所有用戶開放；所有登入用戶都能雲端同步，付費差異在「同步配額 + 共享協作 + Google Calendar 同步」。</p>
 </blockquote>
 <hr />
 <h2>2. 帳號</h2>
 <h3>2.1 帳號建立</h3>
-<p>您可使用：</p>
+<p>您可使用第三方帳號登入（本服務不提供 Email + 密碼帳號）：</p>
 <ul>
-<li>Email + 密碼</li>
-<li>Apple Sign In（iOS）</li>
-<li>Google Sign In（Android）</li>
+<li>Google Sign In</li>
+<li>Apple Sign In</li>
 </ul>
 <p>您需提供真實、準確的資訊。每人限建立一個帳號。</p>
 <h3>2.2 帳號安全</h3>
 <p>您有責任：</p>
 <ul>
-<li>保管帳號密碼</li>
+<li>妥善保管您用於登入的第三方帳號（Google／Apple），以及（桌面版）App 鎖 PIN</li>
 <li>不得分享帳號給他人</li>
 <li>若帳號遭未授權存取，立即通知我們（<a href="mailto:hellopilotdone@gmail.com">hellopilotdone@gmail.com</a>）</li>
 </ul>
@@ -118,12 +127,12 @@
 <tr>
 <td>Pro 月繳</td>
 <td>每月自動續費</td>
-<td><code>pilotdone_pro_monthly</code></td>
+<td><code>com.pilotdone.monthly</code></td>
 </tr>
 <tr>
 <td>Pro 年繳</td>
 <td>每年自動續費</td>
-<td><code>pilotdone_pro_yearly</code></td>
+<td><code>com.pilotdone.yearly</code></td>
 </tr>
 </tbody>
 </table>
@@ -142,8 +151,8 @@
 <p>取消後：</p>
 <ul>
 <li>當期訂閱繼續至到期日</li>
-<li>到期後降回免費版</li>
-<li><strong>雲端資料保留 30 天</strong>（詳見第 4 條）</li>
+<li>到期後降回免費版（雲端轉唯讀）</li>
+<li><strong>雲端資料不會刪除</strong>，僅轉為唯讀保留（詳見第 4 條）</li>
 </ul>
 <blockquote>
 <p>我們<strong>不提供退款</strong>，除非適用法律要求（如台灣消費者保護法、歐盟消費者指令）。
@@ -153,7 +162,10 @@ Apple/Google 的退款政策另行適用。</p>
 <p>若調整訂閱價格，我們將提前 30 天通知。繼續使用即表示接受新價格。</p>
 <hr />
 <h2>4. 資料保留政策</h2>
-<h3>4.1 取消後的 30 天寬限期</h3>
+<h3>4.1 過期不刪除，轉唯讀</h3>
+<blockquote>
+<p><strong>Your data is yours, forever.</strong> 訂閱過期<strong>不會刪除</strong>您的雲端資料。</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -164,32 +176,27 @@ Apple/Google 的退款政策另行適用。</p>
 <tbody>
 <tr>
 <td>訂閱中（active）</td>
-<td>完整保留</td>
+<td>完整保留，可讀可寫</td>
 </tr>
 <tr>
-<td>取消，寬限期內（cancelled）</td>
-<td>保留 30 天</td>
+<td>取消、付費期內（cancelled）</td>
+<td>完整保留，仍可讀可寫</td>
 </tr>
 <tr>
-<td>寬限期結束（expired）</td>
-<td>永久刪除</td>
+<td>已過期（expired）</td>
+<td><strong>完整保留，轉唯讀</strong>：可讀取／換裝置拉回，暫停寫入；重新訂閱即恢復</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p><strong>30 天起算點</strong>：訂閱到期日（非取消申請日）。</p>
+<p>過期<strong>不會自動刪除</strong>雲端資料；真正刪除只發生在您主動刪除帳號時（見 4.3）。</p>
 </blockquote>
-<h3>4.2 寬限期提醒（Email）</h3>
-<ul>
-<li>取消當下：<strong>不</strong>另發商業 Email（以 App 內狀態與 App Store／Google Play 為主）</li>
-<li><strong>雲端資料實際刪除後</strong>：一封 Email 確認雲端已清除（本機資料不受影響）</li>
-</ul>
-<h3>4.3 本機資料不受影響</h3>
-<p>無論訂閱狀態如何，儲存在您裝置上的本機資料永遠不受刪除（除非您主動解除安裝 App）。</p>
-<h3>4.4 刪除帳號</h3>
+<h3>4.2 本機資料不受影響</h3>
+<p>無論訂閱狀態如何，儲存在您裝置上的本機資料永遠可讀可寫、不受刪除（除非您主動解除安裝 App）。</p>
+<h3>4.3 刪除帳號</h3>
 <p>您可在「設定 → 刪除帳號」永久刪除帳號。刪除後：</p>
 <ul>
-<li>所有雲端資料<strong>立即</strong>永久刪除（不適用 30 天保留）</li>
+<li>所有雲端資料<strong>立即</strong>永久刪除</li>
 <li>無法恢復</li>
 <li>退款不適用</li>
 </ul>
