@@ -162,6 +162,49 @@ h4 { font-size: 1.05rem; }
 .landing .legal-links li,
 .landing .contact li { padding: 6px 0; }
 
+/* ── Plans ────────────────────────────────────────── */
+.landing .plan-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.landing .plan {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 18px 8px;
+}
+.landing .plan-pro { border-color: var(--accent); }
+.landing .plan h3 { margin: 0 0 4px; color: var(--text); }
+.landing .plan .price {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.landing .plan .price span { font-size: 0.95rem; color: var(--text-muted); font-weight: 400; }
+.landing .plan .price-year { margin: 2px 0 0; font-size: 0.85rem; color: var(--text-muted); }
+.landing .plan ul { list-style: none; padding: 0; margin: 12px 0 0; }
+.landing .plan li {
+  padding: 6px 0 6px 22px;
+  position: relative;
+  font-size: 0.95rem;
+}
+.landing .plan li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+.landing .plan-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 12px;
+}
+@media (max-width: 600px) {
+  .landing .plan-grid { grid-template-columns: 1fr; }
+}
+
 /* ── Text content (legal pages) ───────────────────── */
 
 .content p { margin: 0.8em 0; }
